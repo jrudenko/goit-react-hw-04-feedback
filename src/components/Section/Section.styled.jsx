@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.section`
-  height: 50vh;
-  padding: 50px 200px;
+export const Container = styled.section` 
+  padding: 30px 200px;
 `;
 
 export const Title = styled.h1`
+  text-align: center;
   color: #576284;
   font-size: 40px;
   &:hover {

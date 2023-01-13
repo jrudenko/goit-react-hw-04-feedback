@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { SectionTitle, Text } from './Statistics.styled';
 
 const Statistics = ({
   good,
@@ -8,15 +9,13 @@ const Statistics = ({
   positivePercentage,
 }) => {
   return (
-  <>
-    <ul>
-      <li>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad: {bad}</li>
-      <li>Total: {total}</li>
-      <li>Positive feedback: {positivePercentage}%</li>
-    </ul>
-  </>
+    <SectionTitle>
+      <Text>Good: {good}</Text>
+      <Text>Neutral: {neutral}</Text>
+      <Text>Bad: {bad}</Text>
+      <Text>Total: {total}</Text>
+      <Text>Positive feedback: {positivePercentage}%</Text>
+    </SectionTitle>
 )
 };
 

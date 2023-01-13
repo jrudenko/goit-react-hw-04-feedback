@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import { Button } from './FeedbackOptions.styled.jsx';
+import { Button, BtnWrapper } from './FeedbackOptions.styled.jsx';
 
 
 const FeedbackOptions = ({ options, onBtnClick }) => (
-  <div>
+  <BtnWrapper>
     {options.map(option => (
       <Button type="button" key={option} onClick={() => onBtnClick(option)}>
         {option}
       </Button>
     ))}
-  </div>
+  </BtnWrapper>
 );
 
 FeedbackOptions.propTypes = {

@@ -9,6 +9,7 @@ export const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
 
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -20,3 +21,7 @@ export const Button = styled.button`
     transition: all 0.2s;
   }
 `;
+export const BtnWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+`
